@@ -1,0 +1,186 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>DESAFIO2</title>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-wrapper">
+      <img src="assets/imgs/logoblackAlex.png" class="brand-img" alt="">
+      <div class="nav-items">
+        <img src="assets/imgs/smile.PNG" class="icon" alt="" >
+      </div>
+    </div>
+  </nav>
+
+ <div class = "main">
+    <div class="container">
+      <div class="card">
+        <div class="headercard">
+          <img class="picprofile" src="assets/imgs/logo1.jpg">
+          <div class="headeritems">
+            <p class="title">Parte 1</p>
+            <p class="subtitle">Desafío 2</p>
+          </div>
+        </div>
+        <div class="section1" >
+          <img id="myDIV" src="assets/imgs/img11.jpg" alt="" onclick="myFunction()">
+        </div>
+        <p class="description">
+          <i id="icon1" class="fa fa-heart" aria-hidden="true" onclick="iconColor()"></i>
+          <i id="icon2" class="fa fa-thumbs-up" aria-hidden="true" onclick="iconColor2()"></i>
+          <br>
+          <b>Parte 1</b> Se debe construir una página con una única imagen, al hacerle click a la imagen se le debe
+          agregar un borde rojo de 2 pixeles, al hacerle click nuevamente se le debe quitar el borde.
+        </p>
+      </div>
+    </div>
+
+ 
+
+  <div class="container">
+    <div class="card">
+      <div class="headercard">
+        <img class="picprofile" src="assets/imgs/logo1.jpg">
+        <div class="headeritems">
+          <p class="title">Parte 2</p>
+          <p class="subtitle">Desafío 2</p>
+        </div>
+      </div>
+      <div class=section2 >
+        <div class="item1">
+          <img class="stickers" src="assets/imgs/sticker1.png" alt="">
+        </div>
+        <div class="item2">
+          <img class="stickers" src="assets/imgs/sticker2.png" alt="">
+        </div>
+        <div class="item3">
+          <img class="stickers" src="assets/imgs/sticker3.png" alt="">
+        </div>
+        <div class="item4">
+          <p>Unidades: <input id="cantidad" size="5" placeholder=" 0"></p>
+          <br>
+        </div>
+        <div class="item5">
+          <p>Unidades: <input id="cantidad2" size="5" placeholder=" 0"></p>
+          <br>
+        </div>
+        <div class="item6">
+          <p>Unidades: <input id="cantidad3" size="5" placeholder=" 0"></p>
+          <br>
+        </div>
+        <div class="item7">
+          <button class="buttonSticker" onClick="calcular()">Calcular</button>
+          <p><span id="res"></span></p>
+        </div>
+      </div>
+      <p class="description">
+        <i id="icon3" class="fa fa-heart" aria-hidden="true" onclick="iconColor3()"></i>
+        <i id="icon4" class="fa fa-thumbs-up" aria-hidden="true" onclick="iconColor4()"></i>
+        <br>
+        <b>Parte 2 </b> Se debe construir una página web que permita pedir hasta 10 stickers de los 3 tipos
+        disponibles. Para eso deberá existir un input debajo de cada imagen donde el usuario podrá
+        ingresar un número. En caso de que la suma de todos los stickers seleccionados sea menor
+        o igual 10 se indicará en un párrafo nuevo la cantidad de stickers llevados. Ejemplo "llevas
+        5 stickers" en cualquier otro caso se mostrará un texto que dice "Llevas demasiados
+        stickers"
+      </p>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <div class="headercard">
+        <img class="picprofile" src="assets/imgs/logo1.jpg">
+        <div class="headeritems">
+          <p class="title">Parte 3</p>
+          <p class="subtitle">Desafío 2</p>
+        </div>
+      </div>
+
+      <section class="section3">
+
+        <p class="neon"> INGRESA LA PASSWORD </p>
+
+        <div class="items2">
+
+          <select id="mySelect">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <select id="mySelect2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <select id="mySelect3">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+
+
+          <button class="buttonValidar" onClick="Validar()">Ingresar</button>
+        </div>
+
+
+        <!-- <div id="1" class ="fondo1" onclick="cambiar_fondo_con_class(id)"></div>
+          <div id="2" class ="fondo2" onclick="cambiar_fondo_con_class(id)"></div>
+          <div id="3" class ="fondo3" onclick="cambiar_fondo_con_class(id)"></div> -->
+
+
+        <div id="demo"></div>
+
+
+
+
+      </section>
+
+
+      <p class="description">
+        <i id="icon5" class="fa fa-heart" aria-hidden="true" onclick="iconColor5()"></i>
+        <i id="icon6" class="fa fa-thumbs-up" aria-hidden="true" onclick="iconColor6()"></i>
+        <br>
+        <b>Parte 3</b> 
+        Se debe construir una página con 3 select y opciones con dígitos del 1 al 9, al hacer click a
+        la opción ingresar se debe verificar que el password sea 911 y en ese caso mostrar debajo
+        del botón ingresar, un párrafo con el contenido "password 1 correcto", en caso de que el
+        password sea 714 se debe mostrar en el párrafo "password 2 es correcto", si ingresa otro
+        valor se debe mostrar "password incorrecto".
+      </p>
+    </div>
+  </div>
+ </div>
+
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
